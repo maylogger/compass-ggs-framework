@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    = yield_content :head
+    = stylesheet_link_tag ( "main" )
+    = javascript_include_tag( "main" )
+  %body{:class => page_classes}
+    .content
+      #hd= yield_content :header
+      #bd
+        %section#main
+          .inner= yield
+        %section#sidebar
+          .inner= yield_content :sidebar
+      %footer#ft= yield_content :footer

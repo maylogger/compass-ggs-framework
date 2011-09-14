@@ -1,0 +1,32 @@
+//
+// Zoomable baseline grid
+// type size presets
+//
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+.font-s {
+  @include adjust-font-size-to(13px,3/4);
+}
+
+.font-m {
+  @include adjust-font-size-to(15px);
+}
+
+.font-l {
+  @include adjust-font-size-to(18px);
+}
+
+.font-xl {
+  @include adjust-font-size-to(18px,3/2);
+}
+
+.font-xxl {
+  @include adjust-font-size-to(22px);
+}

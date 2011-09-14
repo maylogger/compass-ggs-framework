@@ -1,0 +1,23 @@
+.content {
+  margin: 0 $ggs-column;
+}
+
+h1 {
+  @include adjust-font-size-to(24px);
+  @include rhythm(2,1,0,1,24px);
+  @include trailing-border(5px,1,24px);
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  @include adjust-font-size-to(24px);
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    @include font-zoom(1);
+  }
+}

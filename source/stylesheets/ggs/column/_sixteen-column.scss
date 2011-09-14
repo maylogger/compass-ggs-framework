@@ -1,0 +1,21 @@
+//
+// every number must / 2
+//
+
+@media screen and (min-width: 1872px) {
+  $column: 10/2;
+  .content {
+    @include ggs-container($column);
+  }
+  #main {
+    @include ggs-column(6/2 ,$column)
+  }
+}
+
+// for max
+@media screen and (min-width: 2080px) {
+  body {
+    @include font-zoom(2);
+    max-width: (2560/$ggs-em)em;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin ggs-container($column) {
+  margin: 0 #{( 18 - $column * 2 ) / 2 * $ggs-column };
+}
+
+@mixin ggs-column($i, $column) {
+  width: 100% / $column * $i;
+}
+
+@mixin font-zoom($i: 0) {
+  font-size: #{( $ggs-font-size + $i ) / $ggs-em}em;
+}

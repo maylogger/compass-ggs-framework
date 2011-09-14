@@ -1,0 +1,20 @@
+- content_for :head do
+  %title Home
+
+%h1= lorem.words 5
+%h2= lorem.words 5
+%h3= lorem.words 5
+%h4= lorem.words 5
+%h5= lorem.words 5
+%h6= lorem.words 5
+%h2
+  = lorem.sentence
+%p= lorem.sentences 5
+:markdown
+  **甲吐出**那飽吸過的*香煙*，愈會碰著痛苦。甲吐出那飽吸過的香煙，遂亦不受到阻礙，來和他們一拚！
+%ul
+  - 3.times do
+    %li= lorem.words 5
+%ol
+  - 3.times do
+    %li= lorem.words 5

@@ -1,0 +1,20 @@
+//
+// Golden Grid System (1.0) <http://goldengridsystem.com/>
+// by Joni Korpi            <http://jonikorpi.com/>
+// licensed under MIT       <http://opensource.org/licenses/mit-license.php>
+//
+// Compass Extension
+// by evenwu                <http://evendesign.tw>
+//
+
+$ggs-line: 24 !default;
+$ggs-column: 100% / 18 !default;
+$ggs-font-size: 16 !default;
+$ggs-em: $ggs-font-size * 1 !default;
+
+@import "compass";
+@import "compass/reset";
+@import "ggs/mixins";
+@import "ggs/default-style";
+@import "ggs/type-size-presets";
+@import "ggs/column";
