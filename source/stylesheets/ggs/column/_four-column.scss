@@ -16,6 +16,10 @@ h3 {
   @include adjust-font-size-to(24px);
 }
 
+#main {
+  background: #ccc;
+}
+
 @media screen and (min-width: 640px) {
   body {
     @include font-zoom(1);
