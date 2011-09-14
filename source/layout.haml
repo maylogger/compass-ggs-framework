@@ -11,8 +11,8 @@
     .content
       #hd= yield_content :header
       #bd
-        %section#main
+        #main
           .inner= yield
-        %section#sidebar
+        #sidebar
           .inner= yield_content :sidebar
       %footer#ft= yield_content :footer
