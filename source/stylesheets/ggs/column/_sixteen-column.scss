@@ -8,7 +8,7 @@
     @include ggs-container($column);
   }
   #main {
-    @include ggs-column(6/2 ,$column)
+    @include ggs-column(10/2 ,$column)
   }
 }
 

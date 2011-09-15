@@ -3,9 +3,6 @@
     @include font-zoom;
   }
   $column: 8;
-  #main {
-    @include ggs-column(4,$column);
-  }
 }
 
 @media screen and (min-width: 888px) {
@@ -18,12 +15,9 @@
   body {
     @include font-zoom;
   }
-  $column: 6;
+  $column: 8;
   .content {
     @include ggs-container($column);
-  }
-  #main {
-    @include ggs-column(3, $column);
   }
 }
 
@@ -36,6 +30,10 @@
 @media screen and (min-width: 1392px) {
   body {
     @include font-zoom;
+  }
+  $column: 6;
+  .content {
+    @include ggs-container($column);
   }
 }
 
