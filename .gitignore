@@ -1,3 +1,5 @@
 .DS_Store
 .sass-cache
 .rvmrc
+tmp/
+tmp/restart.txt
