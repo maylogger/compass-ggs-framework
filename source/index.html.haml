@@ -1,20 +1,47 @@
 - content_for :head do
-  %title Home
+  %title Golden Grid System Compass Framework
+- content_for :header do
+  = partial "header"
+- content_for :sidebar do
+  = partial "sidebar"
+- content_for :footer do
+  = partial "footer"
 
-%h1= lorem.words 5
-%h2= lorem.words 5
-%h3= lorem.words 5
-%h4= lorem.words 5
-%h5= lorem.words 5
-%h6= lorem.words 5
-%h2
-  = lorem.sentence
-%p= lorem.sentences 5
-:markdown
-  **甲吐出**那飽吸過的*香煙*，愈會碰著痛苦。甲吐出那飽吸過的香煙，遂亦不受到阻礙，來和他們一拚！
-%ul
-  - 3.times do
-    %li= lorem.words 5
-%ol
-  - 3.times do
-    %li= lorem.words 5
+%section
+  %h2 標題
+  %h1
+    標題
+    = lorem.words 3
+  %h2
+    標題
+    = lorem.words 3
+  %h3
+    標題
+    = lorem.words 3
+  %h4
+    標題
+    = lorem.words 3
+  %h5
+    標題
+    = lorem.words 3
+  %h6
+    標題
+    = lorem.words 3
+
+%section
+  %h2 句子
+  %p= lorem.sentences 5
+  :markdown
+    **甲吐出**那飽吸過的*香煙*，愈會碰著痛苦。甲吐出那飽吸過的香煙，遂亦不受到阻礙，來和他們一拚！
+
+%section
+  %h2 列表
+  %ul
+    - 3.times do
+      %li= lorem.words 5
+  %ol
+    - 3.times do
+      %li= lorem.words 5
+
+%section
+  %h2 表單
