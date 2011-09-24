@@ -61,6 +61,7 @@ a {
     }
   }
   h3 {
+    @include adjust-leading-to(1,$font-m);
     small {
       display: block;
       color: #999;
