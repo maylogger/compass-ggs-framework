@@ -8,6 +8,10 @@
   }
   #lists {
     @include padding-leader(1,$font-m);
+    .type {
+      float: left;
+      @include ggs-column(3,$column);
+    }
   }
 }
 
