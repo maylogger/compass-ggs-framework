@@ -1,6 +1,6 @@
 .content {
   width: 640px;
-  margin: 0 $ggs-column;
+  margin: 0 auto;
 }
 
 #hd {
@@ -10,5 +10,9 @@
 @media screen and (min-width: 640px) {
   body {
     @include font-zoom(1);
+  }
+  .content {
+    width: auto;
+    margin: 0 $ggs-column;
   }
 }
