@@ -50,11 +50,12 @@ a {
 #lists {
   @include pie-clearfix;
   .list {
-    @include padding-leader(.5,$font-s);
+    @include padding-leader(1,$font-s);
     @include padding-trailer(1,$font-s);
     @extend .font-s;
   }
   .title {
+    @include padding-leader(1,$font-m);
     background: none;
     h2 {
       background: image-url($line-img) repeat-x bottom;
