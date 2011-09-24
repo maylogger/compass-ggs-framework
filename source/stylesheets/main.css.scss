@@ -1,3 +1,71 @@
+$gray: #eeeeef;
+$line-img: "eeeeef.gif";
+$link: #369;
+$hover: #a00;
+
 @import "setup";
 
 // site style
+body {
+  padding-bottom: 150px;
+}
+
+a {
+  @include hover-link;
+  @include link-colors($link, $hover);
+}
+
+#hd {
+  @include pie-clearfix;
+  li {
+    float: left;
+    margin-right: 30px;
+  }
+  h1 {
+    @extend .font-xxxl;
+    @include padding-leader(2,$font-xxxl);
+  }
+}
+
+#bd {
+  @include pie-clearfix;
+}
+
+.title {
+  margin-bottom: -1px;
+  @include padding-leader(1,$font-xl);
+  @include margin-trailer(1,$font-xl);
+  background: image-url($line-img) repeat-x bottom;
+}
+
+#heading {
+  h1 {
+    @extend .title;
+    @include padding-leader(1,$font-xxl);
+    @include margin-trailer(0);
+  }
+}
+
+#lists {
+  .list {
+    @include padding-leader(.5,$font-s);
+    @extend .font-s;
+  }
+  .title {
+    background: none;
+    h2 {
+      background: image-url($line-img) repeat-x bottom;
+    }
+  }
+  h3 {
+    small {
+      display: block;
+      color: #999;
+      font-weight: normal;
+    }
+  }
+}
+
+ul,ol {
+  color: #666;
+}

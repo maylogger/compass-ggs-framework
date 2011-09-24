@@ -7,9 +7,6 @@
   .content {
     @include ggs-container($column);
   }
-  #main {
-    @include ggs-column(10/2 ,$column)
-  }
 }
 
 // for max

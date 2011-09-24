@@ -6,6 +6,7 @@
 .wrapper {
   padding: 0 #{($ggs-line/2)/$ggs-em}em;
   @include box-sizing(border-box);
+  @include pie-clearfix;
 }
 
 //

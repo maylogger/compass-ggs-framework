@@ -2,7 +2,13 @@
   body {
     @include font-zoom;
   }
-  $column: 8;
+  $column: 6;
+  .content {
+    @include ggs-container($column);
+  }
+  #lists {
+    @include padding-leader(1,$font-m);
+  }
 }
 
 @media screen and (min-width: 888px) {
@@ -19,11 +25,38 @@
   .content {
     @include ggs-container($column);
   }
+  #heading {
+    float: left;
+    @include ggs-column(2,$column);
+  }
+  #paragraph {
+    float: left;
+    @include ggs-column(6,$column);
+  }
+  #lists {
+    clear: both;
+    @include pie-clearfix;
+    .title {
+      @include ggs-column(8,$column);
+    }
+    .type {
+      float: left;
+      @include ggs-column(2,$column);
+    }
+  }
+  #quote {
+    float: left;
+    @include ggs-column(4,$column);
+  }
+  #code {
+    float: left;
+    @include ggs-column(4,$column);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   body {
-    @include font-zoom(2);
+    @include font-zoom(1);
   }
 }
 
@@ -39,6 +72,6 @@
 
 @media screen and (min-width: 1680px) {
   body {
-    @include font-zoom(1);
+    @include font-zoom(4);
   }
 }

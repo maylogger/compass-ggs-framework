@@ -3,27 +3,88 @@
 // type size presets
 //
 
+$font-s: 13px;
+$font-m: 15px;
+$font-l: 18px;
+$font-xl: 22px;
+$font-xxl: 27px;
+$font-xxxl: 40px;
+
 body {
+  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.5em;
+  color: $p-color;
 }
 
 .font-s {
-  @include adjust-font-size-to(13px,3/4);
+  @include adjust-font-size-to($font-s,3/4);
 }
 
 .font-m {
-  @include adjust-font-size-to(15px);
+  @include adjust-font-size-to($font-m);
 }
 
 .font-l {
-  @include adjust-font-size-to(18px);
+  @include adjust-font-size-to($font-l);
 }
 
 .font-xl {
-  @include adjust-font-size-to(18px,3/2);
+  @include adjust-font-size-to($font-xl);
 }
 
 .font-xxl {
-  @include adjust-font-size-to(22px);
+  @include adjust-font-size-to($font-xxl);
+}
+
+.font-xxxl {
+  @include adjust-font-size-to($font-xxxl);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $head-color;
+  font-weight: bold;
+}
+
+h1 {
+  @extend .font-xxl;
+}
+
+h2 {
+  @extend .font-xl;
+}
+
+h3 {
+  @extend .font-l;
+}
+
+h4 {
+  @extend .font-m;
+}
+
+h5 {
+  @extend .font-s;
+}
+
+h6 {
+  @extend .font-s;
+  color: lighten($head-color ,26.5%);
+}
+
+p {
+  @extend .font-m;
+  @include margin-leader(1,$font-m);
+}
+
+blockquote {
+  @extend .font-l;
+  border-left: 5px solid $gray - #333;
+  padding-left: 20px;
+  cite {
+    @extend .font-s;
+    color: fade-out($head-color ,.5);
+    &:before {
+      content: "— ";
+    }
+  }
 }

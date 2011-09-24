@@ -84,3 +84,37 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+
+pre, code {
+  font-family: monospace;
+}
+
+small {
+  font-size: .7em;
+}
+
+cite {
+  font-style: italic;
+}
+
+ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+ul.unstyle {
+  list-style: none;
+  margin-left: 0;
+  ul {
+    list-style: disc;
+  }
+}
+ol {
+  margin-left: 28px;
+  list-style: decimal;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  padding-left: 1em;
+}

@@ -1,9 +1,14 @@
+.hide {
+  display: none;
+}
+
 @mixin ggs-container($column) {
   margin: 0 #{( 18 - $column * 2 ) / 2 * $ggs-column };
 }
 
 @mixin ggs-column($i, $column) {
   width: 100% / $column * $i;
+  @extend .wrapper;
 }
 
 @mixin font-zoom($i: 0) {

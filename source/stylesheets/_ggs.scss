@@ -15,6 +15,9 @@ $ggs-em: $ggs-font-size * 1 !default;
 $base-font-size: 16px;
 $base-line-height: 24px;
 
+$head-color: #444;
+$p-color: #444;
+
 @import "compass";
 @import "compass/reset";
 @import "ggs/mixins";
