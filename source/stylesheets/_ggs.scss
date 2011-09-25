@@ -20,8 +20,8 @@ $p-color: #444;
 
 @import "compass";
 @import "compass/reset";
+@import "ggs/prettify";
 @import "ggs/mixins";
 @import "ggs/default-style";
 @import "ggs/type-size-presets";
 @import "ggs/column";
-@import "ggs/prettify";

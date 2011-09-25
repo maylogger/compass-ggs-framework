@@ -18,6 +18,9 @@ a {
 
 #hd {
   @include pie-clearfix;
+  nav {
+    @include padding-leader(1);
+  }
   li {
     float: left;
     margin-right: 30px;

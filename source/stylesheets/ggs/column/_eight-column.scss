@@ -28,6 +28,14 @@
   .content {
     @include ggs-container($column);
   }
+  #hd {
+    h1 {
+      @include adjust-font-size-to(60px);
+    }
+    nav {
+      @include adjust-font-size-to($font-l);
+    }
+  }
   #heading {
     float: left;
     @include ggs-column(2,$column);
