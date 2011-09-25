@@ -30,8 +30,6 @@ sub {
 }
 pre {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
 b, strong {
   font-weight: bold;
@@ -85,10 +83,6 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-pre, code {
-  font-family: monospace;
-}
-
 small {
   font-size: .7em;
 }
@@ -101,7 +95,7 @@ ul {
   margin-left: 20px;
   list-style: disc;
 }
-ul.unstyle {
+ul.unstyled {
   list-style: none;
   margin-left: 0;
   ul {

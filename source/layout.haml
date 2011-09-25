@@ -6,7 +6,7 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     = yield_content :head
     = stylesheet_link_tag ( "main" )
-    = javascript_include_tag( "main" )
+    = javascript_include_tag( "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js","http://more.handlino.com/javascripts/moretext-1.1.js","main" )
   %body{:class => page_classes}
     .content
       #hd= yield_content :header

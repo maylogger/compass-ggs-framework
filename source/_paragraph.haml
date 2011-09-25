@@ -1,10 +1,9 @@
 #paragraph
   %section
     %h2.title Paragraph 段落
-    :markdown
-      **甲吐出**那飽吸過的*香煙*，愈會碰著痛苦。[甲吐出](#)那飽吸過的香煙，遂亦不受到阻礙，來和他們一拚！
+    %p
+      %span{ :class => "lipsum(3)" }
     %p= lorem.sentences 5
-    %p= lorem.sentences 3
 #lists
   %section
     .title
@@ -31,7 +30,7 @@
         %small
           無序列表 2
       .list
-        %ul.unstyle
+        %ul.unstyled
           - 5.times do
             %li= lorem.word
           %li
@@ -71,10 +70,16 @@
   %section
     %h2.title Quote 引言
     %blockquote
+      %p
+        %span{ :class => "lipsum" }
+      %cite= lorem.name
+    %blockquote
       %p= lorem.sentence
       %cite= lorem.name
 #code
   %section
     %h2.title Code 程式碼
+    #section
+      %pre= partial "code"
     #section
       %pre.prettyprint= partial "code"
