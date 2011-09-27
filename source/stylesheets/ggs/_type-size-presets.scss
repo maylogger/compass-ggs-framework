@@ -97,9 +97,15 @@ blockquote {
   }
 }
 
-code, pre {
+code {
   font-family: Monaco, Andale Mono, Courier New, monospace;
-  @extend .font-s;
+  font-weight: normal;
+  color: #404040;
+  background: #fee9cc;
+  padding: 1px 3px;
+  @include border-radius(3px);
+  font-size: 12px;
+  line-height: 1;
 }
 
 pre {
@@ -110,4 +116,5 @@ pre {
   @include border-radius(3px);
   @include margin-trailer(1,$font-s);
   overflow: auto;
+  @extend .font-s;
 }

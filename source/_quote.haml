@@ -1,0 +1,13 @@
+%section#quote
+  %h2.title
+    Quotes 引言
+    %code &lt;blockquote&gt;
+  #usage
+    %pre.prettyprint= partial "quote-code"
+  %blockquote
+    %p
+      %span{ :class => "lipsum" }
+    %cite= lorem.name
+  %blockquote
+    %p= lorem.sentence
+    %cite= lorem.name

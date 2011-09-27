@@ -1,0 +1,75 @@
+%section#lists
+  .title
+    %h2 Lists 列表
+  %section.type
+    %h3
+      Unordered
+      %code &lt;ul&gt;
+      %small
+        無序列表 1
+    %usage
+      %pre.prettyprint= partial "list-code1";
+    .list
+      %ul
+        - 5.times do
+          %li= lorem.word
+        %li
+          = lorem.word
+          %ul
+            - 4.times do
+              %li= lorem.word
+        - 3.times do
+          %li= lorem.word
+  %section.type
+    %h3
+      Unstyled
+      %code &lt;ul.unstyled&gt;
+      %small
+        無序列表 2
+    %usage
+      %pre.prettyprint= partial "list-code2";
+    .list
+      %ul.unstyled
+        - 5.times do
+          %li= lorem.word
+        %li
+          = lorem.word
+          %ul
+            - 4.times do
+              %li= lorem.word
+        - 3.times do
+          %li= lorem.word
+  %section.type
+    %h3
+      Ordered
+      %code &lt;ol&gt;
+      %small
+        有序列表
+    %usage
+      %pre.prettyprint= partial "list-code3";
+    .list
+      %ol
+        - 5.times do
+          %li= lorem.word
+        %li
+          = lorem.word
+          %ol
+            - 4.times do
+              %li= lorem.word
+        - 3.times do
+          %li= lorem.word
+  %section.type
+    %h3
+      Description
+      %code &lt;dl&gt;
+      %code &lt;dt&gt;
+      %code &lt;dd&gt;
+      %small
+        說明列表
+    %usage
+      %pre.prettyprint= partial "list-code4";
+    .list
+      %dl
+        - 3.times do
+          %dt= lorem.word
+          %dd= lorem.sentence

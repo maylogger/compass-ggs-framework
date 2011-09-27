@@ -40,6 +40,10 @@ a {
   @include padding-leader(1,$font-xl);
   @include margin-trailer(1,$font-xl);
   background: image-url($line-img) repeat-x bottom;
+  code {
+    position: relative;
+    top: -5px;
+  }
 }
 
 #heading {
@@ -53,7 +57,6 @@ a {
 #lists {
   @include pie-clearfix;
   .list {
-    @include padding-leader(1,$font-s);
     @include padding-trailer(1,$font-s);
     @extend .font-s;
   }
