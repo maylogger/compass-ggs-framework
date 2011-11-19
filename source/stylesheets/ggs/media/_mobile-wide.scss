@@ -1,0 +1,14 @@
+.content {
+  width: auto;
+  margin: 0 $ggs-column;
+}
+
+#hd {
+  @extend .wrapper;
+  h1 {
+    @include adjust-font-size-to($font-xxl);
+  }
+  nav li {
+    float: none;
+  }
+}

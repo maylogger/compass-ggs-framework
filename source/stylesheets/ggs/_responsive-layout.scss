@@ -1,0 +1,23 @@
+@import "media/mobile";
+
+@media screen and (min-width: 481px) {
+  @import "media/mobile-wide";
+}
+@media screen and (min-width: 641px) {
+  @import "media/tablet";
+}
+@media screen and (min-width: 769px) {
+  @import "media/tablet-wide";
+}
+@media screen and (min-width: 1025px) {
+  @import "media/desktop";
+}
+@media screen and (min-width: 1441px) {
+  @import "media/desktop-wide"
+}
+@media screen and (min-width: 1681px) {
+  @import "media/desktop-wide2"
+}
+@media screen and (min-width: 1920px) {
+  @import "media/desktop-wide3"
+}

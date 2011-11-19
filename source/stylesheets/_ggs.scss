@@ -7,21 +7,30 @@
 // by evenwu                <http://evendesign.tw>
 //
 
-$ggs-line: 24 !default;
-$ggs-column: 100% / 18 !default;
 $ggs-font-size: 16 !default;
+$ggs-line: 24 !default;
+
+$ggs-column: 100% / 18 !default;
 $ggs-em: $ggs-font-size * 1 !default;
 
-$base-font-size: 16px;
-$base-line-height: 24px;
+$head-color: #444 !default;
+$p-color: #444 !default;
 
-$head-color: #444;
-$p-color: #444;
+$mobile-width: 640px;
+$tablet-width: 1024px;
+$desktop-width: 1920px;
+
+// default importing...
+
+$base-font-size: $ggs-font-size * 1px;
+$base-line-height: $ggs-line * 1px;
 
 @import "compass";
-@import "compass/reset";
+@include global-reset;
+
 @import "ggs/prettify";
 @import "ggs/mixins";
 @import "ggs/default-style";
 @import "ggs/type-size-presets";
-@import "ggs/column";
+@import "ggs/border-box";
+@import "ggs/responsive-layout";

@@ -1,0 +1,42 @@
+body {
+  @include font-zoom;
+}
+$column: 8;
+.content {
+  @include ggs-container($column);
+}
+#hd {
+  h1 {
+    @include adjust-font-size-to(60px);
+  }
+  nav {
+    @include adjust-font-size-to($font-l);
+  }
+}
+#heading {
+  float: left;
+  @include ggs-column(2,$column);
+}
+#paragraph {
+  float: left;
+  @include ggs-column(6,$column);
+}
+#lists {
+  clear: both;
+  @include pie-clearfix;
+  .title {
+    @include ggs-column(8,$column);
+  }
+  .type {
+    float: left;
+    @include ggs-column(2,$column);
+  }
+}
+#quote {
+  float: left;
+  @include ggs-column(4,$column);
+}
+#code {
+  float: left;
+  @include ggs-column(4,$column);
+}

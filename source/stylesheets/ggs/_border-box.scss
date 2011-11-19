@@ -3,10 +3,12 @@
 // Note: box-sizing will not work in IE6-8
 //
 
-.wrapper {
-  padding: 0 #{($ggs-line/2)/$ggs-em}em;
-  @include box-sizing(border-box);
-  @include pie-clearfix;
+@media screen and (min-width: 0px) {
+  .wrapper {
+    padding: 0 #{($ggs-line/2)/$ggs-em}em;
+    @include box-sizing(border-box);
+    @include pie-clearfix;
+  }
 }
 
 //
@@ -18,8 +20,4 @@
   width: 640px;
   margin: 0 auto;
   font-size: 100%;
-}
-
-.ie h1 {
-  @extend .font-xxl;
 }

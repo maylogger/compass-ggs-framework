@@ -1,0 +1,4 @@
+$column: 8;
+.content {
+  @include ggs-container($column);
+}
