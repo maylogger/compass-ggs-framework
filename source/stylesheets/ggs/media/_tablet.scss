@@ -1,6 +1,6 @@
 @include font-zoom(2);
 
-$column: 6;
+$column: 7;
 .content {
   @include ggs-container($column);
 }
