@@ -12,5 +12,7 @@
 }
 
 @mixin font-zoom($i: 0) {
-  font-size: #{( $ggs-font-size + $i ) / $ggs-em}em;
+  body {
+    font-size: #{( $ggs-font-size + $i ) / $ggs-em}em;
+  }
 }

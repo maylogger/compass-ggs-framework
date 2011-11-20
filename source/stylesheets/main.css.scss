@@ -9,6 +9,7 @@ $hover: #a00;
 body {
   font-family: "Helvetica Neue", sans-serif;
   padding-bottom: 150px;
+  background: #eef1f1 image-url('handmadepaper.png') center top;
 }
 
 a {
@@ -39,7 +40,7 @@ a {
   margin-bottom: -1px;
   @include padding-leader(1,$font-xl);
   @include margin-trailer(1,$font-xl);
-  background: image-url($line-img) repeat-x bottom;
+  border-bottom: 1px solid rgba(0,0,0,.1);
   code {
     position: relative;
     top: -5px;
